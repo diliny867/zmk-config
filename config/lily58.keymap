@@ -12,12 +12,12 @@
 
 
 #include "keys/base.h"
-//#include "includes/macros.dtsi"
-#include "includes/mods.dtsi"
-#include "includes/dance.dtsi"
-#include "includes/combos.dtsi"
-#include "includes/morphs.dtsi"
-#include "includes/settings.dtsi"
+//#include "include/macros.dtsi"
+#include "include/mods.dtsi"
+#include "include/dance.dtsi"
+#include "include/combos.dtsi"
+#include "include/morphs.dtsi"
+#include "include/settings.dtsi"
 
 
 / {
