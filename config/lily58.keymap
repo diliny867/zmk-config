@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+#include "keys/base.h"
+#include "includes/macros.dtsi"
+#include "includes/mods.dtsi"
+#include "includes/dance.dtsi"
+#include "includes/combos.dtsi"
+#include "includes/morphs.dtsi"
+#include "includes/settings.dtsi"
+
+
 / {
     combos { compatible = "zmk,combos"; };
 
