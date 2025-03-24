@@ -16,9 +16,9 @@
 
     // Further optimization using urob's timerless homerow mods method:
     // https://github.com/urob/zmk-config#timeless-homerow-mods
-    hml: homerow_mods_left {
+    // also was added to main zmk https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods
+    hml: home_row_mod_left {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_LEFT";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
 
@@ -28,10 +28,10 @@
       // global-quick-tap-ms = <150>;         // requires PR #1387
       // global-quick-tap;
       hold-trigger-key-positions = <KEYS_R KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
+      hold-trigger-on-release;
     };
 
-    hmr: homerow_mods_right {
+    hmr: home_row_mod_right {
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS_RIGHT";
       #binding-cells = <2>;
@@ -43,7 +43,7 @@
       // global-quick-tap-ms = <150>;         // requires PR #1387
       // global-quick-tap;
       hold-trigger-key-positions = <KEYS_L KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
+      hold-trigger-on-release;
     };
 
 
