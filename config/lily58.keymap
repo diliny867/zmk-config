@@ -7,20 +7,22 @@
 // https://github.com/urob/zmk-config
 // https://github.com/folke/zmk-config
 
-#include "keys/58.h"
-#include "keys/base.h"
-#include "include/settings.dtsi"
-#include "include/mods.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+#include "keys/58.h"
+#include "keys/base.h"
+#include "include/settings.dtsi"
+#include "include/mods.dtsi"
 //#include "include/macros.dtsi"
 //#include "include/dance.dtsi"
 //#include "include/combos.dtsi"
 //#include "include/morphs.dtsi"
+
 
 / {
     combos { compatible = "zmk,combos"; };
