@@ -4,6 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+// Lookup:
+// https://github.com/urob/zmk-config
+// https://github.com/folke/zmk-config
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
