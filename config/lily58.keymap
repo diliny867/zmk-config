@@ -15,6 +15,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+#include "keys/58.h"
 #include "keys/base.h"
 #include "include/settings.dtsi"
 //#include "include/macros.dtsi"
