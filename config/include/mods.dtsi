@@ -32,7 +32,6 @@
 
     hmr: home_row_mod_right {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_RIGHT";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
 
