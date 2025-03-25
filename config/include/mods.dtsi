@@ -1,5 +1,7 @@
-#define HM_TAPPING_TERM 280
-#define HM_TAPPING_TERM_FAST 200
+
+#define HRM_TAPPING_TERM 280
+#define HRM_QUICK_TAP 175
+#define HRM_PRIOR_IDLE 150
 
 / {
 
@@ -23,8 +25,9 @@
       bindings = <&kp>, <&kp>;
 
       flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick-tap-ms = <175>;        // repeat on tap-into-hold
+      tapping-term-ms = <HRM_TAPPING_TERM>;
+      require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+      quick-tap-ms = <HRM_QUICK_TAP>;
       global-quick-tap;
       hold-trigger-key-positions = <KEYS_R KEYS_T>;
       hold-trigger-on-release;
@@ -36,8 +39,9 @@
       bindings = <&kp>, <&kp>;
 
       flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick_tap_ms = <175>;
+      tapping-term-ms = <HRM_TAPPING_TERM>;
+      require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+      quick_tap_ms = <HRM_QUICK_TAP>;
       global-quick-tap;
       hold-trigger-key-positions = <KEYS_L KEYS_T>;
       hold-trigger-on-release;
