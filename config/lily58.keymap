@@ -23,8 +23,8 @@
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
 //#include "include/combos.dtsi"
-#include "include/dance.dtsi"
-#include "include/macros.dtsi"
+//#include "include/dance.dtsi"
+//#include "include/macros.dtsi"
 
 
 / {
