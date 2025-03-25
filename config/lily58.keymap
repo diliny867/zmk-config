@@ -30,6 +30,31 @@
     keymap {
         compatible = "zmk,keymap";
 
+        lpar_bkt: morph_lpar_into_lbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        rpar_bkt: morph_rpar_into_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lbrc_lt: morph_lbrc_into_lt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        rbrc_gt: morph_rbrc_into_gt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         default_layer {
             bindings = <
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
@@ -53,9 +78,9 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp BSLH     &kp N4       &kp N5       &kp N6       &kp DEL                              &kp EXCL     &kp AT       &kp ASTRK    &kp MINUS    &kp PRCNT    &kp PIPE
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp N0       &hml RALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &kp AMPS     &kp LPAR     &kp RPAR     &kp UNDER    &kp HASH     &kp TILDE
+   &trans       &kp N0       &hml RALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &kp AMPS     &lpar_bkt    &rpar_bkt    &kp UNDER    &kp HASH     &kp TILDE
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &kp CARET    &kp LBRC     &kp RBRC     &kp PLUS     &kp DOLLAR   &trans
+   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &kp CARET    &lbrc_lt     &rbrc_gt     &kp PLUS     &kp DOLLAR   &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
