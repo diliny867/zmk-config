@@ -16,12 +16,15 @@
 
 #include "keys/58.h"
 #include "keys/base.h"
+
+#include "zmk-helpers/helper.h"
+
 #include "include/settings.dtsi"
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
-//#include "include/macros.dtsi"
-//#include "include/dance.dtsi"
-//#include "include/combos.dtsi"
+#include "include/combos.dtsi"
+#include "include/dance.dtsi"
+#include "include/macros.dtsi"
 
 
 / {
