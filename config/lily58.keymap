@@ -18,10 +18,10 @@
 #include "keys/base.h"
 #include "include/settings.dtsi"
 #include "include/mods.dtsi"
+#include "include/morphs.dtsi"
 //#include "include/macros.dtsi"
 //#include "include/dance.dtsi"
 //#include "include/combos.dtsi"
-//#include "include/morphs.dtsi"
 
 
 / {
@@ -29,31 +29,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        lpar_bkt: morph_lpar_into_lbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBKT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rpar_bkt: morph_rpar_into_rbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBKT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        lbrc_lt: morph_lbrc_into_lt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp LT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rbrc_gt: morph_rbrc_into_gt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
 
         default_layer {
             bindings = <
