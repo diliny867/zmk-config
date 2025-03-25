@@ -1,18 +1,30 @@
 
 
-ZMK_MOD_MORPH(lpar_bkt,
+ZMK_MOD_MORPH(lpar_morph,
     bindings = <&kp LPAR>, <&kp LBKT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(rpar_bkt,
+ZMK_MOD_MORPH(rpar_morph,
   bindings = <&kp RPAR>, <&kp RBKT>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(lbrc_lt,
+ZMK_MOD_MORPH(lbrc_morph,
   bindings = <&kp LBRC>, <&kp LT>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(rbrc_gt,
+ZMK_MOD_MORPH(rbrc_morph,
   bindings = <&kp RBRC>, <&kp GT>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+ZMK_MOD_MORPH(excl_morph,
+  bindings = <&kp EXCL>, <&kp QMARK>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+ZMK_MOD_MORPH(at_morph,
+  bindings = <&kp AT>, <&kp AMPS>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+ZMK_MOD_MORPH(equal_morph,
+  bindings = <&kp EQUAL>, <&kp CARET>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )

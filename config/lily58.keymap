@@ -54,11 +54,11 @@
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
    &trans       &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                               &trans       &trans       &trans       &trans       &trans       &kp GRAVE
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp BSLH     &kp N4       &kp N5       &kp N6       &kp DEL                              &kp EXCL     &kp AT       &kp ASTRK    &kp MINUS    &kp PRCNT    &kp PIPE
+   &trans       &kp BSLH     &kp N4       &kp N5       &kp N6       &kp DEL                              &excl_morph  &kp SQT      &kp ASTRK    &kp MINUS    &kp PRCNT    &kp PIPE
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp N0       &hml RALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &kp AMPS     &lpar_bkt    &rpar_bkt    &kp UNDER    &kp HASH     &kp TILDE
+   &trans       &kp N0       &hml RALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &at_morph    &lpar_morph  &rpar_morph  &kp UNDER    &kp HASH     &kp TILDE
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &kp CARET    &lbrc_lt     &rbrc_gt     &kp PLUS     &kp DOLLAR   &trans
+   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &equal_morph &lbrc_morph  &rbrc_morph  &kp PLUS     &kp DOLLAR   &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
