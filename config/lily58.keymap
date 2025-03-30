@@ -17,6 +17,7 @@
 #include "keys/58.h"
 #include "keys/base.h"
 
+//https://github.com/urob/zmk-helpers
 #include "zmk-helpers/helper.h"
 
 #include "include/settings.dtsi"
@@ -68,13 +69,13 @@
         raise_layer {
             bindings = <
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
-   &trans       &trans       &trans       &trans       &trans       &trans                               &trans       &trans       &trans       &trans       &trans       &to 3
+   &trans       &trans       &trans       &trans       &trans       &trans                               &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                               &trans       &kp RET      &kp UP       &kp BSPC     &kp DEL      &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp F6       &hml RALT F7 &hml LCTRL F8 &hml LSHIFT F9 &kp F10                           &kp LC(S)    &kp LEFT     &kp DOWN     &kp RIGHT    &kp SLASH    &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &trans       &trans       &kp TAB      &kp F11      &kp F12      &trans       &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH   
+   &trans       &trans       &kp LS(LC(T)) &kp TAB     &kp F11      &kp F12      &trans       &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH   
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans       &trans     &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
