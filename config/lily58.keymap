@@ -15,7 +15,8 @@
 
 
 #include "keys/58.h"
-#include "keys/base.h"
+#include "keys/keys_base.h"
+#include "keys/keys_ru.h"
 
 //https://github.com/urob/zmk-helpers
 #include "zmk-helpers/helper.h"
@@ -23,9 +24,12 @@
 #include "include/settings.dtsi"
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
+#include "include/ru_morphs.dtsi"
 //#include "include/combos.dtsi"
 //#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
+
+#define RUSSIAN_MODE
 
 
 / {
@@ -59,7 +63,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp N0       &hml RALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &at_morph    &lpar_morph  &rpar_morph  &kp UNDER    &kp HASH     &kp TILDE
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &equal_morph &lbrc_morph  &rbrc_morph  &kp PLUS     &kp DOLLAR   &trans
+   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &equal_morph &lbrc_morph  &rbrc_morph  &kp PLUS     &slash_morph &kp DOLLAR
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
@@ -75,7 +79,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp F6       &hml RALT F7 &hml LCTRL F8 &hml LSHIFT F9 &kp F10                           &kp LC(S)    &kp LEFT     &kp DOWN     &kp RIGHT    &kp SLASH    &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &trans       &kp LS(LC(T)) &kp TAB     &kp F11      &kp F12      &trans       &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH   
+   &trans       &trans       &kp LS(LC(T)) &kp TAB     &kp F11      &kp F12      &trans       &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT     &trans   
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans       &trans     &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
@@ -128,6 +132,10 @@
             >;
         };
     };
+
+#ifdef RUSSIAN_MODE
+#include "russian_mode_layers.keymap"
+#endif
 
     conditional_layers {
         compatible = "zmk,conditional-layers";

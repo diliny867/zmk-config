@@ -28,3 +28,7 @@ ZMK_MOD_MORPH(equal_morph,
   bindings = <&kp EQUAL>, <&kp CARET>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+ZMK_MOD_MORPH(slash_morph,
+  bindings = <&kp SLASH>, <&kp BSLH>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
