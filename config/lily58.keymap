@@ -25,12 +25,14 @@
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
 #include "include/ru_morphs.dtsi"
+#include "include/auto_layers.dtsi"
+#include "include/other.dtsi"
 //#include "include/combos.dtsi"
 //#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
 
 
-#define RUSSIAN_MODE
+//#define RUSSIAN_MODE
 
 #ifdef RUSSIAN_MODE
 # define LANG_MODE &to 5
@@ -53,7 +55,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T                                &kp Y        &kp U        &kp I        &kp O        &kp P        &kp MINUS
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &kp LSHIFT   &kp A        &hml RALT S  &hml LCTRL D &hml LSHIFT F &kp G                               &kp H        &hmr RSHIFT J &hmr LCTRL K &hmr RALT L &kp SEMI     &kp RSHIFT
+   &kp MAGIC_SHIFT &kp A     &hml RALT S  &hml LCTRL D &hml LSHIFT F &kp G                               &kp H        &hmr RSHIFT J &hmr LCTRL K &hmr RALT L &kp SEMI     &kp RSHIFT
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
    &kp LCTRL    &kp Z        &kp X        &kp C        &kp V        &kp B        &kp LBKT     &kp RBKT   &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &kp SQT
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
