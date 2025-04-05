@@ -1,7 +1,6 @@
 manifest:
   defaults:
-    revision: v0.2
-    
+    revision: mail
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -15,9 +14,7 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      path: modules/zmk/helpers
     - name: zmk-auto-layer
       remote: urob
-      path: modules/zmk/auto-layer
   self:
     path: config

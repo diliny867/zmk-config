@@ -26,7 +26,7 @@
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
 #include "include/ru_morphs.dtsi"
-#include "include/auto_layers.dtsi"
+//#include "include/auto_layers.dtsi"
 #include "include/other.dtsi"
 //#include "include/combos.dtsi"
 //#include "include/dance.dtsi"
