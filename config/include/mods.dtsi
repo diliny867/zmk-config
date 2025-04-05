@@ -1,6 +1,6 @@
 
 #define HRM_TAPPING_TERM 280
-#define HRM_QUICK_TAP 175
+#define HRM_QUICK_TAP QUICK_TAP_MS
 #define HRM_PRIOR_IDLE 150
 
 
