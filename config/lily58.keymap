@@ -105,7 +105,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp LG(LA(SPACE)) &trans  &trans       &kp LC(R)    &kp LC(Y)                            &msc SCRL_UP &mkp LCLK    &mmv MOVE_UP &mkp RCLK    &kp LG(PSCRN) &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp LC(A)    &kp LC(S)    &trans       &trans       &trans                               &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans
+   &trans       &kp LC(A)  &hml LALT LC(S) &hml LCTRL LC(D) &hml LSHIFT LC(F) &trans                     &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans       &trans       &trans     &trans      &msc SCRL_LEFT &mkp MCLK &msc SCRL_RIGHT &tog FUNC   &trans   
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
