@@ -26,6 +26,16 @@
 //https://github.com/urob/zmk-helpers
 #include "zmk-helpers/helper.h"
 
+
+#define DEFLT 0
+#define LOWER 1
+#define NUM   2
+#define RAISE 3
+#define FUNC  4
+#define META  5
+#define GAMNG 6
+
+
 #include "include/settings.dtsi"
 #include "include/mods.dtsi"
 #include "include/morphs.dtsi"
@@ -35,14 +45,6 @@
 //#include "include/combos.dtsi"
 //#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
-
-#define DEFLT 0
-#define LOWER 1
-#define NUM   2
-#define RAISE 3
-#define FUNC  4
-#define META  5
-#define GAMNG 6
 
 
 /{
