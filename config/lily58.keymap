@@ -46,6 +46,8 @@
 //#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
 
+#define LWR_SN SMART_NUM
+
 
 /{
    combos { compatible = "zmk,combos"; };
@@ -64,7 +66,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
    &kp LCTRL    &kp Z        &kp X        &kp C        &kp V        &kp B        &kp LBKT     &kp RBKT   &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &kp SQT
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
-                                          &kp LALT     &lt FUNC LGUI &mo LOWER   &kp SPACE    &kp RET    &mo RAISE    &kp BSPC     &mt RALT TAB
+                                          &kp LALT     &lt FUNC LGUI &mo LWR_SN  &kp SPACE    &kp RET    &mo RAISE    &kp BSPC     &mt RALT TAB
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
          >;
       };
