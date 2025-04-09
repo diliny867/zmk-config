@@ -48,6 +48,8 @@
 
 #define LWR_SN SMART_NUM
 
+#define LWR_SN SMART_NUM
+
 
 /{
    combos { compatible = "zmk,combos"; };
