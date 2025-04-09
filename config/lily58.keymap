@@ -46,9 +46,8 @@
 //#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
 
-#define LWR_SN SMART_NUM
-
-#define LWR_SN SMART_NUM
+#define SMART_NUM &smart_num NUM 0
+#define LWR_SN    &smart_num LOWER 0
 
 
 /{
