@@ -1,10 +1,2 @@
 
 
-ZMK_TAP_DANCE(oh_f4_td,
-    tapping-term-ms = <200>;
-    bindings = <&ohkp F4 F9>, <&ohkp_excl F11 0>;
-)
-ZMK_TAP_DANCE(oh_f5_td,
-    tapping-term-ms = <200>;
-    bindings = <&ohkp F5 F10>, <&ohkp_excl F12 0>;
-)
