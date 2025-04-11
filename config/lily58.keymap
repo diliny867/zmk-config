@@ -196,9 +196,9 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &kp TAB      &ohkp Q Y    &ohkp W U    &ohkp E I    &ohkp R O    &ohkp T P                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &kp LSHIFT   &ohkp A H    &ohkp S J    &ohkp D K    &ohkp F L    &ohkp G ;                            &trans       &trans       &trans       &trans       &trans       &trans
+   &kp LSHIFT   &ohkp A H    &ohkp S J    &ohkp D K    &ohkp F L    &ohkp G SEMI                         &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &kp LCTRL    &ohkp Z N    &kp X M      &ohkp C ,    &ohkp V .    &ohkp B /    &ohkp LBKT RBKT &trans  &trans       &trans       &trans       &trans       &trans       &trans
+   &kp LCTRL    &ohkp Z N    &kp X M      &ohkp C COMMA &ohkp V DOT &ohkp B FSLH &ohkp LBKT RBKT &trans  &trans       &trans       &trans       &trans       &trans       &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &lalt_morph  &lt OH_NAV LGUI OH_LWR_SN &ohspace_mh  &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
