@@ -61,19 +61,19 @@ ZMK_MOD_MORPH(ohn1_mh,
   bindings = <&ohkp N1 N6>, <&kp N6>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(n2_mh,
+ZMK_MOD_MORPH(ohn2_mh,
   bindings = <&ohkp N2 N7>, <&kp N7>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(n3_mh,
+ZMK_MOD_MORPH(ohn3_mh,
   bindings = <&ohkp N3 N8>, <&kp N8>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(n4_mh,
+ZMK_MOD_MORPH(ohn4_mh,
   bindings = <&ohkp N4 N9>, <&kp N9>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(n5_mh,
+ZMK_MOD_MORPH(ohn5_mh,
   bindings = <&ohkp N5 N0>, <&kp N0>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
