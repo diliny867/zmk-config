@@ -244,9 +244,9 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp LG(LA(SPACE)) &kp END &kp UP       &kp HOME     &kp PG_UP                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &LC(LSHIFT)  &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                            &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &kp LC(LSHIFT) &kp LEFT   &kp DOWN     &kp RIGHT    &kp PG_DN                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &LALT        &trans       &kp DEL      &kp BSPC     &trans       &trans       &trans     &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &kp LALT     &trans       &kp DEL      &kp BSPC     &trans       &trans       &trans     &trans       &trans       &trans       &trans       &trans       &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
