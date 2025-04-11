@@ -25,3 +25,18 @@ ZMK_HOLD_TAP(hmr,
   hold-trigger-key-positions = <KEYS_L KEYS_T>;
   hold-trigger-on-release;
 )
+
+ZMK_HOLD_TAP(ohkp,
+  bindings = <&kp>, <&kp>;
+  flavor = "tap-preferred";
+  tapping_term_ms = <135>;
+  quick_tap_ms = <0>;
+)
+
+ZMK_HOLD_TAP(ohkp_excl,
+  bindings = <&kp>, <&trans>;
+  flavor = "tap-preferred";
+  tapping_term_ms = <135>;
+  quick_tap_ms = <0>;
+)
+

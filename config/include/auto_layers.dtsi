@@ -5,3 +5,9 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
+
+
+ZMK_HOLD_TAP(oh_smart_num, bindings = <&mo>, <&oh_num_dance>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_TAP_DANCE(oh_num_dance, bindings = <&num_word OH_NUM>, <&mo OH_NUM>;
+              tapping-term-ms = <200>;)
