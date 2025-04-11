@@ -46,8 +46,8 @@
 //#include "include/ru_morphs.dtsi"
 #include "include/auto_layers.dtsi"
 #include "include/other.dtsi"
-//#include "include/combos.dtsi"
-//#include "include/dance.dtsi"
+#include "include/combos.dtsi"
+#include "include/dance.dtsi"
 //#include "include/macros.dtsi"
 
 #define SMART_NUM &smart_num NUM 0
