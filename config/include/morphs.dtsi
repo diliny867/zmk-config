@@ -52,6 +52,10 @@ ZMK_MOD_MORPH(lalt_morph,
   bindings = <&kp LALT>, <&kp RALT>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+ZMK_MOD_MORPH(lock_morph,
+  bindings = <&kp KP_NLCK>, <&kp SLCK>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 ZMK_MOD_MORPH(ohspace_mh,
   bindings = <&ohkp SPACE ENTER>, <&kp BSPC>;
