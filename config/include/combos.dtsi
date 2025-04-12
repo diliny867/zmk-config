@@ -1,4 +1,4 @@
 
 
-//ZMK_COMBO(onehanded_mode, &to OH_DEFLT, LT3 LT2 LT1 LT0, DEFLT   , 35)
-//ZMK_COMBO(to_default,     &to DEFLT   , LT4 LT3 LT2 LT1, OH_DEFLT, 35)
+ZMK_COMBO(onehanded_mode, &to OH_DEFLT, LT3 LT2 LT1 LT0, DEFLT   , 35)
+ZMK_COMBO(to_default,     &to DEFLT   , LT4 LT3 LT2 LT1, OH_DEFLT, 35)
