@@ -198,7 +198,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &kp LSHIFT   &ohkp H A    &ohkp J S    &ohkp K D    &ohkp L F    &ohkp SEMI G                         &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &kp LCTRL    &ohkp N Z    &ohkp M X    &ohkp COMMA C &ohkp DOT V &ohkp FLSH B &ohkp RBKT LBKT &trans  &trans       &trans       &trans       &trans       &trans       &trans
+   &kp LCTRL    &ohkp N Z    &ohkp M X    &ohkp COMMA C &ohkp DOT V &ohkp FSLH B &ohkp RBKT LBKT &trans  &trans       &trans       &trans       &trans       &trans       &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &lalt_morph  &lt OH_NAV LGUI OH_LWR_SN &ohspace_mh  &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
