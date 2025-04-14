@@ -34,7 +34,7 @@ ZMK_HOLD_TAP(ohkp,
 )
 
 ZMK_HOLD_TAP(ohkp_excl,
-  bindings = <&kp>, <&trans>;
+  bindings = <&kp>, <&none>;
   flavor = "tap-preferred";
   tapping-term-ms = <175>;
   quick-tap-ms = <0>;

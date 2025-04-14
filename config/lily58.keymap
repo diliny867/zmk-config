@@ -41,7 +41,7 @@
 
 
 #include "include/settings.dtsi"
-#include "include/mods.dtsi"
+#include "include/hold_tap.dtsi"
 #include "include/morphs.dtsi"
 //#include "include/ru_morphs.dtsi"
 #include "include/auto_layers.dtsi"
