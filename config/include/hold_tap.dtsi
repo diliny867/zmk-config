@@ -33,8 +33,9 @@ ZMK_HOLD_TAP(ohkp,
   quick-tap-ms = <0>;
 )
 
-ZMK_BEHAVIOR(ohkp_excl, hold_tap, compatible = "zmk,behavior-hold-tap";
-  #binding-cells = <1>, bindings = <&kp>, <&none>;
+#define ZMK_BEHAVIOR_CORE_hold_tap_exclusive    compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>
+ZMK_BEHAVIOR(ohkp_excl, hold_tap_exclusive, 
+  bindings = <&kp>, <&none>;
   flavor = "tap-preferred";
   tapping-term-ms = <175>;
   quick-tap-ms = <0>;
