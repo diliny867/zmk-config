@@ -26,6 +26,7 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;
 )
 
+
 ZMK_HOLD_TAP(ohkp,
     bindings = <&kp>, <&kp>;
     flavor = "tap-preferred";
@@ -33,18 +34,17 @@ ZMK_HOLD_TAP(ohkp,
     quick-tap-ms = <0>;
 )
 
-//#define ZMK_BEHAVIOR_CORE_hold_tap_exclusive    compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>
-//ZMK_BEHAVIOR(ohkp_excl, hold_tap_exclusive, 
-//  bindings = <&kp>, <&none>;
-//  flavor = "tap-preferred";
-//  tapping-term-ms = <175>;
-//  quick-tap-ms = <0>;
-//)
-
 ZMK_HOLD_TAP(ohkp_excl,
   bindings = <&none>, <&kp>;
   flavor = "tap-preferred";
-  tapping-term-ms = <175>;
+  tapping-term-ms = <2000>;
   quick-tap-ms = <0>;
 )
 
+
+ZMK_HOLD_TAP(lt_lgui,
+    bindings = <&mo>, <&td_lgui>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+)

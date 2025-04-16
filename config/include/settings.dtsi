@@ -2,13 +2,13 @@
 #define QUICK_TAP_MS 175
 
 &mt {
-  tapping-term-ms = <QUICK_TAP_MS>;
+    tapping-term-ms = <QUICK_TAP_MS>;
 };
 
 &lt {
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <QUICK_TAP_MS>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 

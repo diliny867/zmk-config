@@ -11,7 +11,7 @@ ZMK_TAP_DANCE(oh_f5_td,
 )
 
 
-ZMK_TAP_DANCE(lt_func_lgui, 
-    bindings = <&lt FUNC LGUI>, <&kp LGUI>;
+ZMK_TAP_DANCE(td_lgui, 
+    bindings = <&kp LGUI>, <&kp LGUI>;
     tapping-term-ms = <200>;
 )
