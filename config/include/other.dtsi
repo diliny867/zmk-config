@@ -18,3 +18,6 @@
 //&caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
 //  /delete-property/ ignore-modifiers;
 //};
+
+ZMK_TRI_STATE(tri_alttab, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+              ignored-key-positions = <LF2 RB1 RB2 RB3 RM2>;)

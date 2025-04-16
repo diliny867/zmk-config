@@ -14,5 +14,7 @@ manifest:
       remote: urob
     - name: zmk-auto-layer
       remote: urob
+    - name: zmk-tri-state
+      remote: urob
   self:
     path: config

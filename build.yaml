@@ -24,15 +24,20 @@ include:
   - board: nice_nano_v2
     shield: lily58_right
 
+# Build with zmk studio
 #  - board: nice_nano_v2
 #    shield: lily58_left
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
 #    artifact-name: lily58_left_with_studio
-  - board: nice_nano_v2
-    shield: lily58_left
-    snippet: zmk-usb-logging
-    artifact-name: lily58_left_logging
-  - board: nice_nano_v2
-    shield: settings_reset
-    artifact-name: lily58_reset
+
+# Build with usb logging
+#  - board: nice_nano_v2
+#    shield: lily58_left
+#    snippet: zmk-usb-logging
+#    artifact-name: lily58_left_logging
+
+# Build reset firmware
+#  - board: nice_nano_v2
+#    shield: settings_reset
+#    artifact-name: lily58_reset
