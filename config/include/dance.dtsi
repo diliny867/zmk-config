@@ -11,7 +11,13 @@ ZMK_TAP_DANCE(oh_f5_td,
 )
 
 
-ZMK_TAP_DANCE(td_lgui, 
-    bindings = <&kp LGUI>, <&kp LGUI>;
+#define ZMK_BEHAVIOR_CORE_tap_dance1     compatible = "zmk,behavior-tap-dance"; #binding-cells = <1>
+ZMK_BEHAVIOR(td_kp1, tap_dance1, 
+    bindings = <&kp>, <&kp>;
     tapping-term-ms = <200>;
 )
+
+//ZMK_TAP_DANCE(td_lgui, 
+//    bindings = <&kp LGUI>, <&kp LGUI>;
+//    tapping-term-ms = <200>;
+//)

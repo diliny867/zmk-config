@@ -43,7 +43,7 @@ ZMK_HOLD_TAP(ohkp_excl,
 
 
 ZMK_HOLD_TAP(lt_lgui,
-    bindings = <&mo>, <&td_lgui>;
+    bindings = <&mo>, <&td_kp1>;
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
