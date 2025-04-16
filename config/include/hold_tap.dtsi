@@ -6,45 +6,45 @@
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
 ZMK_HOLD_TAP(hml,
-  bindings = <&kp>, <&kp>;
-  flavor = "balanced";
-  tapping-term-ms = <HRM_TAPPING_TERM>;
-  require-prior-idle-ms = <HRM_PRIOR_IDLE>;
-  quick-tap-ms = <HRM_QUICK_TAP>;
-  global-quick-tap;
-  hold-trigger-key-positions = <KEYS_R KEYS_T>;
-  hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+    flavor = "balanced";
+    tapping-term-ms = <HRM_TAPPING_TERM>;
+    require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+    quick-tap-ms = <HRM_QUICK_TAP>;
+    global-quick-tap;
+    hold-trigger-key-positions = <KEYS_R KEYS_T>;
+    hold-trigger-on-release;
 )
 ZMK_HOLD_TAP(hmr,
-  bindings = <&kp>, <&kp>;
-  flavor = "balanced";
-  tapping-term-ms = <HRM_TAPPING_TERM>;
-  require-prior-idle-ms = <HRM_PRIOR_IDLE>;
-  quick-tap-ms = <HRM_QUICK_TAP>;
-  global-quick-tap;
-  hold-trigger-key-positions = <KEYS_L KEYS_T>;
-  hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+    flavor = "balanced";
+    tapping-term-ms = <HRM_TAPPING_TERM>;
+    require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+    quick-tap-ms = <HRM_QUICK_TAP>;
+    global-quick-tap;
+    hold-trigger-key-positions = <KEYS_L KEYS_T>;
+    hold-trigger-on-release;
 )
 
 ZMK_HOLD_TAP(ohkp,
-  bindings = <&ohkp_excl>, <&kp>;
-  flavor = "tap-preferred";
-  tapping-term-ms = <175>;
-  quick-tap-ms = <0>;
+    bindings = <&kp>, <&kp>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <175>;
+    quick-tap-ms = <0>;
 )
 
-#define ZMK_BEHAVIOR_CORE_hold_tap_exclusive    compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>
-ZMK_BEHAVIOR(ohkp_excl, hold_tap_exclusive, 
-  bindings = <&kp>, <&none>;
-  flavor = "tap-preferred";
-  tapping-term-ms = <175>;
-  quick-tap-ms = <0>;
-)
-
-//ZMK_HOLD_TAP(ohkp_excl,
+//#define ZMK_BEHAVIOR_CORE_hold_tap_exclusive    compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>
+//ZMK_BEHAVIOR(ohkp_excl, hold_tap_exclusive, 
 //  bindings = <&kp>, <&none>;
 //  flavor = "tap-preferred";
 //  tapping-term-ms = <175>;
 //  quick-tap-ms = <0>;
 //)
+
+ZMK_HOLD_TAP(ohkp_excl,
+  bindings = <&none>, <&kp>;
+  flavor = "tap-preferred";
+  tapping-term-ms = <175>;
+  quick-tap-ms = <0>;
+)
 
