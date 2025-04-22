@@ -1,83 +1,83 @@
 
 
-ZMK_MOD_MORPH(lpar_morph,
+ZMK_MOD_MORPH(mh_lpar,
     bindings = <&kp LPAR>, <&kp LBKT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(rpar_morph,
+ZMK_MOD_MORPH(mh_rpar,
     bindings = <&kp RPAR>, <&kp RBKT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(lbrc_morph,
+ZMK_MOD_MORPH(mh_lbrc,
     bindings = <&kp LBRC>, <&kp LT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(rbrc_morph,
+ZMK_MOD_MORPH(mh_rbrc,
     bindings = <&kp RBRC>, <&kp GT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(excl_morph,
+ZMK_MOD_MORPH(mh_excl,
     bindings = <&kp EXCL>, <&kp QMARK>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(at_morph,
+ZMK_MOD_MORPH(mh_at,
     bindings = <&kp AT>, <&kp AMPS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(equal_morph,
+ZMK_MOD_MORPH(mh_equal,
     bindings = <&kp EQUAL>, <&kp CARET>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(slash_morph,
+ZMK_MOD_MORPH(mh_slash,
     bindings = <&kp SLASH>, <&kp BSLH>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(minus_morph,
+ZMK_MOD_MORPH(mh_minus,
     bindings = <&kp MINUS>, <&kp PLUS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(hash_morph,
+ZMK_MOD_MORPH(mh_hash,
     bindings = <&kp HASH>, <&kp PRCNT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(dollar_morph,
+ZMK_MOD_MORPH(mh_dollar,
     bindings = <&kp DOLLAR>, <&kp PIPE>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(grave_morph,
+ZMK_MOD_MORPH(mh_grave,
     bindings = <&kp GRAVE>, <&kp TILDE>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(lalt_morph,
+ZMK_MOD_MORPH(mh_lalt,
     bindings = <&kp LALT>, <&kp RALT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(lock_morph,
+ZMK_MOD_MORPH(mh_lock,
     bindings = <&kp KP_NLCK>, <&kp SLCK>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-ZMK_MOD_MORPH(ohspace_mh,
+ZMK_MOD_MORPH(mh_ohspace,
     bindings = <&ohkp ENTER SPACE>, <&kp BSPC>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(ohn1_mh,
+ZMK_MOD_MORPH(mh_ohn1,
     bindings = <&ohkp N6 N1>, <&kp N6>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(ohn2_mh,
+ZMK_MOD_MORPH(mh_ohn2,
     bindings = <&ohkp N7 N2>, <&kp N7>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(ohn3_mh,
+ZMK_MOD_MORPH(mh_ohn3,
     bindings = <&ohkp N8 N3>, <&kp N8>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(ohn4_mh,
+ZMK_MOD_MORPH(mh_ohn4,
     bindings = <&ohkp N9 N4>, <&kp N9>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-ZMK_MOD_MORPH(ohn5_mh,
+ZMK_MOD_MORPH(mh_ohn5,
     bindings = <&ohkp N0 N5>, <&kp N0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )

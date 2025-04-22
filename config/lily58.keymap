@@ -46,7 +46,7 @@
 //#include "include/ru_morphs.dtsi"
 #include "include/auto_layers.dtsi"
 #include "include/combos.dtsi"
-#include "include/dance.dtsi"
+#include "include/tap_dance.dtsi"
 //#include "include/macros.dtsi"
 #include "include/other.dtsi"
 
@@ -54,6 +54,8 @@
 #define LWR_SN       &smart_num    LOWER 0
 #define OH_SMART_NUM &oh_smart_num OH_NUM 0
 #define OH_LWR_SN    &oh_smart_num OH_LOWER 0
+
+#define LT_LGUI_FUNC &lt_lgui FUNC 0
 
 
 /{
@@ -71,7 +73,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
    &kp LCTRL    &kp Z        &kp X        &kp C        &kp V        &kp B        &kp LBKT     &kp RBKT   &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &kp SQT
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
-                                          &kp LALT     &lt_lgui FUNC 0  LWR_SN   &kp SPACE    &kp RET    &mo RAISE    &kp BSPC     &mt RALT TAB
+                                          &kp LALT     LT_LGUI_FUNC LWR_SN       &kp SPACE    &kp RET    &mo RAISE    &kp BSPC     &mt RALT TAB
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
          >;
       };
@@ -81,11 +83,11 @@
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
    &trans       &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                               &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp GRAVE
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp BSLH     &kp N4       &kp N5       &kp N6       &kp DEL                              &excl_morph  &kp SQT      &kp ASTRK    &kp MINUS    &kp PRCNT    &kp PIPE
+   &trans       &kp BSLH     &kp N4       &kp N5       &kp N6       &kp DEL                              &mh_excl     &kp SQT      &kp ASTRK    &kp MINUS    &kp PRCNT    &kp PIPE
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp N0       &hml LALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &at_morph    &lpar_morph  &rpar_morph  &kp UNDER    &kp HASH     &kp TILDE
+   &trans       &kp N0       &hml LALT N1 &hml LCTRL N2 &hml LSHIFT N3 &kp LBKT                          &mh_at       &mh_lpar     &mh_rpar     &kp UNDER    &kp HASH     &kp TILDE
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &equal_morph &lbrc_morph  &rbrc_morph  &kp PLUS     &slash_morph &kp DOLLAR
+   &trans       &kp SLASH    &kp N7       &kp N8       &kp N9       &kp RBKT     &trans       &trans     &mh_equal    &mh_lbrc     &mh_rbrc     &kp PLUS     &mh_slash    &kp DOLLAR
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
@@ -190,7 +192,7 @@
       onehand_layer {
          bindings = <
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
-   &kp ESC      &ohn1_mh     &ohn2_mh     &ohn3_mh     &ohn4_mh     &ohn5_mh                             &trans       &trans       &trans       &trans       &trans       &trans
+   &kp ESC      &mh_ohn1     &mh_ohn2     &mh_ohn3     &mh_ohn4     &mh_ohn5                             &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &kp TAB      &ohkp Y Q    &ohkp U W    &ohkp I E    &ohkp O R    &ohkp P T                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
@@ -198,7 +200,7 @@
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
    &kp LCTRL    &ohkp N Z    &ohkp M X    &ohkp COMMA C &ohkp DOT V &ohkp FSLH B &ohkp RBKT LBKT &trans  &trans       &trans       &trans       &trans       &trans       &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
-                                          &lalt_morph  &lt OH_NAV LGUI OH_LWR_SN &ohspace_mh  &trans     &trans       &trans       &trans
+                                          &mh_lalt     &lt OH_NAV LGUI OH_LWR_SN &mh_ohspace  &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
          >;
       };
@@ -206,13 +208,13 @@
       onehand_lower_layer {
          bindings = <
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
-   &grave_morph &ohkp F1 F6  &ohkp F2 F7  &ohkp F3 F8  &oh_f4_td    &oh_f5_td                            &trans       &trans       &trans       &trans       &trans       &trans
+   &mh_grave    &ohkp F1 F6  &ohkp F2 F7  &ohkp F3 F8  &oh_td_f4    &oh_td_f5                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &dollar_morph &minus_morph &kp ASTRK   &kp SQT      &excl_morph                          &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &mh_dollar   &mh_minus    &kp ASTRK    &kp SQT      &mh_excl                             &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &hash_morph  &kp UNDER    &rpar_morph  &lpar_morph  &at_morph                            &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &mh_hash     &kp UNDER    &mh_rpar     &mh_lpar     &mh_at                               &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┼------------┼------------┤
-   &trans       &slash_morph &slash_morph &rbrc_morph  &lbrc_morph  &equal_morph &trans       &trans     &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &mh_slash    &mh_slash    &mh_rbrc     &mh_lbrc     &mh_equal    &trans       &trans     &trans       &trans       &trans       &trans       &trans       &trans
 //╰------------┴------------┴------------┼------------┼------------┼------------┼----------┤ ├----------┼------------┼------------┼------------┼------------┴------------┴------------╯
                                           &trans       &trans       &trans       &trans       &trans     &trans       &trans       &trans
 //                                       ╰------------┴------------┴------------┴----------╯ ╰----------┴------------┴------------┴------------╯
@@ -238,7 +240,7 @@
       onehand_nav_layer {
          bindings = <
 //╭------------┬------------┬------------┬------------┬------------┬------------┬----------╮ ╭----------┬------------┬------------┬------------┬------------┬------------┬------------╮
-   &trans       &lock_morph  &kp LG(PSCRN) &kp LG(LS(S)) &kp INS    &kp CAPSLOCK                         &trans       &trans       &trans       &trans       &trans       &trans
+   &trans       &mh_lock     &kp LG(PSCRN) &kp LG(LS(S)) &kp INS    &kp CAPSLOCK                         &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
    &trans       &kp LG(LA(SPACE)) &kp END &kp UP       &kp HOME     &kp PG_UP                            &trans       &trans       &trans       &trans       &trans       &trans
 //├------------┼------------┼------------┼------------┼------------┼------------┤          | |          ├------------┼------------┼------------┼------------┼------------┼------------┤
