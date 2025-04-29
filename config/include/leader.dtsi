@@ -43,7 +43,7 @@ ZMK_LEADER_SEQUENCE(leader_omega,   &el_omega,     G W)  // ω
 
 
 
-ZMK_LEADER_SEQUENCE(leader_mpi,     &math_pi,      P I)  // π
+ZMK_LEADER_SEQUENCE(leader_mpi,     &el_pi,        P I)  // π
 
 
 ZMK_LEADER_SEQUENCE(leader_taskmgr, &kp LC(LS(ESC)), T A S K)  // open taskmanager
