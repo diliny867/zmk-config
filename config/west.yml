@@ -16,5 +16,7 @@ manifest:
       remote: urob
     - name: zmk-tri-state
       remote: urob
+    - name: zmk-leader-key
+      remote: urob
   self:
     path: config

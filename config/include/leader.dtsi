@@ -1,0 +1,32 @@
+
+ZMK_LEADER_SEQUENCE(leader_alpha,   &el_alpha,     G A)  // α
+ZMK_LEADER_SEQUENCE(leader_beta,    &el_beta,      G B)  // β
+ZMK_LEADER_SEQUENCE(leader_gamma,   &el_gamma,     G G)  // γ
+ZMK_LEADER_SEQUENCE(leader_delta,   &el_delta,     G D)  // δ
+ZMK_LEADER_SEQUENCE(leader_epsilon, &el_epsilon,   G E)  // ε
+ZMK_LEADER_SEQUENCE(leader_zeta,    &el_zeta,      G Z)  // ζ
+ZMK_LEADER_SEQUENCE(leader_eta,     &el_eta,       G H)  // η
+ZMK_LEADER_SEQUENCE(leader_theta,   &el_theta,     G V)  // θ
+ZMK_LEADER_SEQUENCE(leader_iota,    &el_iota,      G I)  // ι
+ZMK_LEADER_SEQUENCE(leader_kappa,   &el_kappa,     G K)  // κ
+ZMK_LEADER_SEQUENCE(leader_lambda,  &el_lambda,    G L)  // λ
+ZMK_LEADER_SEQUENCE(leader_mu,      &el_mu,        G M)  // μ
+ZMK_LEADER_SEQUENCE(leader_nu,      &el_nu,        G N)  // ν
+ZMK_LEADER_SEQUENCE(leader_xi,      &el_xi,        G X)  // ξ
+ZMK_LEADER_SEQUENCE(leader_omikron, &el_omikron,   G O)  // ο
+ZMK_LEADER_SEQUENCE(leader_pi,      &el_pi,        G P)  // π
+ZMK_LEADER_SEQUENCE(leader_rho,     &el_rho,       G R)  // ρ
+ZMK_LEADER_SEQUENCE(leader_sigma,   &el_sigma,     G S)  // σ
+ZMK_LEADER_SEQUENCE(leader_tau,     &el_tau,       G T)  // τ
+ZMK_LEADER_SEQUENCE(leader_upsilon, &el_upsilon,   G U)  // υ
+ZMK_LEADER_SEQUENCE(leader_phi,     &el_phi,       G F)  // ϕ
+ZMK_LEADER_SEQUENCE(leader_chi,     &el_chi,       G C)  // χ
+ZMK_LEADER_SEQUENCE(leader_psi,     &el_psi,       G Y)  // ψ
+ZMK_LEADER_SEQUENCE(leader_omega,   &el_omega,     G W)  // ω
+
+
+
+ZMK_LEADER_SEQUENCE(leader_mpi,     &math_pi,      P I)  // π
+
+
+ZMK_LEADER_SEQUENCE(leader_taskmgr, &kp LC(LS(ESC)), T A S K)  // open taskmanager
