@@ -26,11 +26,11 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;
 )
 
-#define ZMK_BEHAVIOR_CORE_hold_tap1   compatible = "zmk,behavior-hold-tap"; #binding-cells = <1>
-#define ZMK_HOLD_TAP1(name, ...)      ZMK_BEHAVIOR(name, hold_tap1, __VA_ARGS__)
+#define ZMK_BEHAVIOR_CORE_hold_tap0   compatible = "zmk,behavior-hold-tap"; #binding-cells = <0>
+#define ZMK_HOLD_TAP0(name, ...)      ZMK_BEHAVIOR(name, hold_tap0, __VA_ARGS__)
 
-ZMK_HOLD_TAP1(hmr_lpar,
-    bindings = <&kp>, <&mh_lpar>;
+ZMK_HOLD_TAP0(hmr_lpar,
+    bindings = <&kp RSHIFT>, <&mh_lpar>;
     flavor = "balanced";
     tapping-term-ms = <HRM_TAPPING_TERM>;
     require-prior-idle-ms = <HRM_PRIOR_IDLE>;
@@ -39,8 +39,8 @@ ZMK_HOLD_TAP1(hmr_lpar,
     hold-trigger-key-positions = <KEYS_L KEYS_T>;
     hold-trigger-on-release;
 )
-ZMK_HOLD_TAP1(hmr_rpar,
-    bindings = <&kp>, <&mh_rpar>;
+ZMK_HOLD_TAP0(hmr_rpar,
+    bindings = <&kp LCTRL>, <&mh_rpar>;
     flavor = "balanced";
     tapping-term-ms = <HRM_TAPPING_TERM>;
     require-prior-idle-ms = <HRM_PRIOR_IDLE>;
