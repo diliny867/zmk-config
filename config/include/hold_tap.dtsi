@@ -25,6 +25,26 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-key-positions = <KEYS_L KEYS_T>;
     hold-trigger-on-release;
 )
+ZMK_HOLD_TAP(hmr_lpar,
+    bindings = <&kp>, <&mh_lpar>;
+    flavor = "balanced";
+    tapping-term-ms = <HRM_TAPPING_TERM>;
+    require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+    quick-tap-ms = <HRM_QUICK_TAP>;
+    global-quick-tap;
+    hold-trigger-key-positions = <KEYS_L KEYS_T>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(hmr_rpar,
+    bindings = <&kp>, <&mh_rpar>;
+    flavor = "balanced";
+    tapping-term-ms = <HRM_TAPPING_TERM>;
+    require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+    quick-tap-ms = <HRM_QUICK_TAP>;
+    global-quick-tap;
+    hold-trigger-key-positions = <KEYS_L KEYS_T>;
+    hold-trigger-on-release;
+)
 
 
 ZMK_HOLD_TAP(ohkp,
