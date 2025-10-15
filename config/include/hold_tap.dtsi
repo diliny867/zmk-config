@@ -25,7 +25,11 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-key-positions = <KEYS_L KEYS_T>;
     hold-trigger-on-release;
 )
-ZMK_HOLD_TAP(hmr_lpar,
+
+#define ZMK_BEHAVIOR_CORE_hold_tap1   compatible = "zmk,behavior-hold-tap"; #binding-cells = <1>
+#define ZMK_HOLD_TAP1(name, ...)      ZMK_BEHAVIOR(name, hold_tap1, __VA_ARGS__)
+
+ZMK_HOLD_TAP1(hmr_lpar,
     bindings = <&kp>, <&mh_lpar>;
     flavor = "balanced";
     tapping-term-ms = <HRM_TAPPING_TERM>;
@@ -35,7 +39,7 @@ ZMK_HOLD_TAP(hmr_lpar,
     hold-trigger-key-positions = <KEYS_L KEYS_T>;
     hold-trigger-on-release;
 )
-ZMK_HOLD_TAP(hmr_rpar,
+ZMK_HOLD_TAP1(hmr_rpar,
     bindings = <&kp>, <&mh_rpar>;
     flavor = "balanced";
     tapping-term-ms = <HRM_TAPPING_TERM>;
