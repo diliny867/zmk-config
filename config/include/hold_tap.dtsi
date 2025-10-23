@@ -1,7 +1,7 @@
 
-#define HRM_TAPPING_TERM 280
+#define HRM_TAPPING_TERM 250
 #define HRM_QUICK_TAP QUICK_TAP_MS
-#define HRM_PRIOR_IDLE 150
+#define HRM_PRIOR_IDLE 125
 
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
