@@ -1,5 +1,5 @@
 
-#define QUICK_TAP_MS 150
+#define QUICK_TAP_MS 175
 
 &mt {
     tapping-term-ms = <QUICK_TAP_MS>;
