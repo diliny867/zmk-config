@@ -47,6 +47,14 @@ ZMK_HOLD_TAP(hmr_rpar,
     hold-trigger-on-release;
 )
 
+ZMK_HOLD_TAP(ht_tp,
+    bindings = <&kp>, <&kp>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <0>;
+)
+
+
 
 ZMK_HOLD_TAP(ohkp,
     bindings = <&kp>, <&kp>;
